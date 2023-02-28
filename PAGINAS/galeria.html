@@ -10,17 +10,45 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img class="logo" src="../IMAGENES/LOGO SIN FONDO.png" alt="LOGO FAMIGLIA E CANE">           
-            <ul class="menu1">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./quienesSomos.html">NOSOTROS</a></li>
-                <li><a href="./menu.html">MENÚ</a></li>                
-            </ul>            
-            <ul class="menu2">
-                <li><a href="./galeria.html">GALERÍA</a></li>
-                <li><a href="./reservas.html">RESERVAS</a></li>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+            
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">
+                    <img src="./IMAGENES/LOGO SIN FONDO.png" alt="Bootstrap" width="80">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                
+                <div class="container-fluid">
+                   
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                      <a class="nav-link disabled" href="#">Flamiglia'e Cane</a>
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./quienesSomos.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./menu.html">Menú</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="collapse navbar-collapse"
+                    id="navbarTogglerDemo01">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="./galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./reservas.html">Reservas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </nav>
     </header>    
 
