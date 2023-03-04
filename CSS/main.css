@@ -35,15 +35,15 @@ a {
 a:link{
     color: white;
 
-} 
+}
 
 a:visited{
     color: white;
-} 
+}
 
 a:focus{
     background-color: #896a30ff;
-} 
+}
 
 a:hover{
     background-color: #896a30ff;
@@ -58,18 +58,9 @@ body{
     font-family: Raleway, Arial, sans-serif;
 }
 
-/* nav {
-    background-color: rgba(0, 0, 0, 0.786);
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-    z-index: 10;
-} */
+nav {
+    background-color: rgba(0, 0, 0, 0.677);
+}
 
 main {
     padding-top: 8%;
@@ -77,7 +68,7 @@ main {
 
 .menu1 {
     color: #896a30ff;
-    
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -90,13 +81,13 @@ main {
     justify-content: center;
     text-align: center;
     padding: 15px;
-    
+
 }
 
 .menu2 {
     color: #896a30ff;
-    
-    
+
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -112,15 +103,15 @@ main {
 }
 
 
-.logo {    
+.logo {
     width: 100%;
     max-width: 100px;
     object-fit: contain;
-   
+
     display: flex;
     justify-content: center;
-    
-    
+
+
 }
 
 /* Main Index */
@@ -138,7 +129,7 @@ main {
 .imagenIndex img{
     width: 45vw;
     /* max-width: 600px; */
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .imagenIndex {
@@ -158,7 +149,7 @@ main {
 .textoBienvenida img {
     margin-top: 20px;
     width: 100%;
-    max-width: 120px;
+    max-width: 15vw;
 }
 
 .textoBienvenida h1 {
@@ -178,20 +169,19 @@ main {
     display: flex;
     justify-content: center;
     padding: 10px;
-    
+
 }
 
 .certificacionPetIndex {
     background-color: #896A30;
-    height: 300px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 10px; */
 }
 
 .certificacionPetIndex img {
-    width: 100%;
+    /* width: 100%; */
+    max-width: 25vw;
     float: left;
     padding: 1.4vw;
 }
@@ -200,7 +190,7 @@ main {
     font-size: 1.4vw;
     font-style: italic;
     margin: auto;
-    padding: 40px;
+    /* padding: 40px; */
     align-items: center;
     text-align: justify;
     color: black;
@@ -234,7 +224,7 @@ main {
 
 .h1Nosotros {
     color: white;
-    font-family: yoko smile, arial;    
+    font-family: yoko smile, arial;
     font-size: 40px;
     font-weight: bolder;
     padding: 20px;
@@ -260,8 +250,8 @@ main {
 .sectionNosotros2 img {
     float: right;
     width: 30%;
-    padding: 10px;  
-    border-image: 10%;  
+    padding: 10px;
+    border-image: 10%;
 }
 
 .sectionNosotros3 {
@@ -279,7 +269,7 @@ main {
     float: right;
     width: 20%;
     right: 20%;
-    padding: 20px;  
+    padding: 20px;
     border-image: 10%;
 }
 
@@ -294,12 +284,12 @@ main {
 .tarjetasMenu {
     padding: 50px;
     gap: 30px;
-    display: flex;    
+    display: flex;
 }
 
 .h1Titulo {
     color: #E7BB5C;
-    font-family: yoko smile, arial;    
+    font-family: yoko smile, arial;
     font-size: 80px;
     font-weight: bolder;
     padding: 20px;
@@ -322,7 +312,7 @@ main {
     padding: 20px;
     border-radius: 6%;
     text-align: center;
-} 
+}
 
 .imgMenu {
     width: 100%;
@@ -407,7 +397,7 @@ main {
 .formReservas {
     background-color: #896A30;
     width: 100%;
-    max-width: 350px; 
+    max-width: 350px;
     display: block;
     overflow: hidden;
     padding: 15px;
