@@ -161,6 +161,8 @@ main {
 .textoBienvenida h1 {
     color: #ECCA70;
     font-size: 15vw;
+    animation-duration: 3s;
+    animation-name: TextoMovimiento;
 }
 
 .textoBienvenida h2 {
@@ -201,6 +203,7 @@ main {
     text-align: justify;
     color: black;
 }
+
 
 /* main nosotros */
 
@@ -296,9 +299,11 @@ main {
 .h1Titulo {
     color: #E7BB5C;
     font-family: yoko smile, arial;
-    font-size: 80px;
+    font-size: 8vw;
     font-weight: bolder;
     padding: 20px;
+    animation-duration: 3s;
+    animation-name: TextoMovimiento;
 }
 
 .tituloMenu div {
@@ -306,10 +311,12 @@ main {
 }
 
 .hrDivisioTotulo {
+        background-color: #ECCA70;
         border-color: #ECCA70;
         margin-left: 160px;
         margin-right: 160px;
         display: flex;
+        height: 2px;
 }
 
 .divMenu {
@@ -338,26 +345,15 @@ main {
 
 /* Main Galeria */
 
-.sectionGaleria {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+h5 {
+    text-shadow: 2px 2px 7px black;
 }
 
-.divGaleria {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.sectionCarouselContainer {
+    padding-bottom: 2rem;
 }
 
-.imgGaleria {
-    width: 28.25vw;
-    height: 20.75vw;
-    object-fit: cover;
-    padding: 20px;
-}
+
 
 /* Main Reservas */
 
@@ -615,6 +611,12 @@ hr {
         margin-right: 10vw;
         
     }
+    .hrDivisioTotulo {
+        background-color: #ECCA70;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        height: 3px;
+    }
 
     .contenedorFooter h4 {
         font-size: 1.5vw;
@@ -624,6 +626,10 @@ hr {
         width: 3.1vw;
         height: 3.1vw;
         margin: 4px;
+    }
+
+    .h1Titulo {
+        font-size: 10vw;
     }
 }
 
@@ -673,3 +679,15 @@ hr {
         margin: 2px;
     }
 }
+
+@keyframes TextoMovimiento {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
