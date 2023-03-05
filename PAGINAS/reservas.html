@@ -13,10 +13,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
             
                 <div class="container">
-                    <a class="navbar-brand" href="../index.html">
+                    <a class="navbar-brand navSinHover" href="../index.html">
                     <img src="../IMAGENES/LOGO SIN FONDO.png" alt="Bootstrap" width="80">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +27,18 @@
                 <div class="container-fluid">
                    
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                      <a class="nav-link disabled" href="#">Flamiglia'e Cane</a>
                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="./quienesSomos.html">Nosotros</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./quienesSomos.html" role="button" aria-expanded="false">Nosotros</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./quienesSomos.html#scrollspyHeading1">Historia</a></li>
+                              <li><a class="dropdown-item" href="./quienesSomos.html#scrollspyHeading2">Misión</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="./quienesSomos.html#scrollspyHeading3">Visión</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="./menu.html">Menú</a>

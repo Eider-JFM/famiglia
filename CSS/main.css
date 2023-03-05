@@ -63,12 +63,16 @@ body{
 }
 
 nav {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.757);
     font-size: 1.3rem;
 }
 
 main {
-    padding-top: 8%;
+    padding-top: 4%;
+}
+
+.mainNormal {
+    padding-top: 2px;
 }
 
 .menu1 {
@@ -120,6 +124,10 @@ main {
 }
 
 /* Main Index */
+
+.navSinHover:hover {
+    background: none;
+}
 
 main {
     background-color: #010000ff;
@@ -207,6 +215,21 @@ main {
 
 /* main nosotros */
 
+.dropdown-item.active {
+    background: #ECCA70 !important;
+    color: black;
+}
+
+.dropdown-menu {
+    background: black;
+    opacity: 0.75;
+    
+}
+
+.dropdown-divider{
+    background: #896A30;
+    height: 2px;
+}
 .sectionNosotros1 {
     background-image: url(../IMAGENES/historia\ nosotros.jpg);
     background-position: center;
@@ -214,11 +237,12 @@ main {
     background-size: cover;
     display: flex;
     justify-content: center;
-    padding: 20px
+    align-items: center;
+    margin-top: 30px;
 }
 
 .divNosotros {
-    background-color: #896a307a;
+    background-color: rgba(0, 0, 0, 0.343);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,9 +250,18 @@ main {
     margin: auto;
 }
 
-.sectionNosotros1 img {
-    width: 25%;
-    float: left;
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.imgCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .h1Nosotros {
@@ -252,16 +285,11 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
     padding: 20px;
     margin-top: 10px;
 }
 
-.sectionNosotros2 img {
-    float: right;
-    width: 30%;
-    padding: 10px;
-    border-image: 10%;
-}
 
 .sectionNosotros3 {
     background-image: url(../IMAGENES/visionNosotros.jpg);
@@ -316,7 +344,7 @@ main {
         margin-left: 160px;
         margin-right: 160px;
         display: flex;
-        height: 2px;
+        height: 3px;
 }
 
 .divMenu {
@@ -630,6 +658,22 @@ hr {
 
     .h1Titulo {
         font-size: 10vw;
+    }
+
+    .divsectionNosotros2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .divsectionNosotros2 img {
+        margin-top: 15px;
+        max-width: 60vw;
+        
+    }
+
+    .divsectionNosotros3 img {
+        margin-top: 15px;
+        max-width: 40vw;
     }
 }
 

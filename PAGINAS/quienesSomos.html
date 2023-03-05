@@ -12,10 +12,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
             
                 <div class="container">
-                    <a class="navbar-brand" href="../index.html">
+                    <a class="navbar-brand navSinHover" href="../index.html">
                     <img src="../IMAGENES/LOGO SIN FONDO.png" alt="Bootstrap" width="80">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,18 @@
                 <div class="container-fluid">
                    
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                      <a class="nav-link disabled" href="#">Flamiglia'e Cane</a>
                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="./quienesSomos.html">Nosotros</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./quienesSomos.html" role="button" aria-expanded="false">Nosotros</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./quienesSomos.html#scrollspyHeading1">Historia</a></li>
+                              <li><a class="dropdown-item" href="./quienesSomos.html#scrollspyHeading2">Misión</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="./quienesSomos.html#scrollspyHeading3">Visión</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="./menu.html">Menú</a>
@@ -54,28 +59,58 @@
         </nav>
     </header>    
 
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <section class="justificacionTitulo">
+            <div><h1 class="h1Titulo">Quiénes Somos</h1></div>
+        </section>
+
+        <hr class="hrDivisioTotulo">
+
         <section class="sectionNosotros1">
-            <img src="../IMAGENES/2019.png" alt="">
-            <div class="divNosotros">
-                <h1 class="h1Nosotros">Historia</h1>
-                <p class="pNosotros">Nace en el <b>2019</b>, creado por <b>Brigithe Urrutia, Leonelis León y Shirly Martínez</b>. Estos egresados Sena tenían el sueño de crear un emprendimiento distinto e innovador, que abarcara a toda la sociedad, por ello plantearon crear un restaurante de comida italiana y que a su vez integrara a esos seres maravillosos que son nuestras mascotas. En 2020 los fundadores se reunieron después de tener todo lo necesario para poder materializar su sueño, por ello crearon el nombre, el logo, escogieron el primer local, un menú, e hicieron una completa proyección de lo que sería la realización de este sueño. Por motivos de la pandemia del covid 19, el sueño tuvo que se congelado nuevamente, pero esto no era el final si no el comienzo.En el año <b>2022</b> por fin se hace realidad este sueño, más exactamente el día <b>18 de abril de 2022</b>. Desde ese día nuestras puertas se abrieron logrando posicionarnos en la ciudad. Queremos seguir mejorando cada día y posicionarnos como el mejor restaurante de la ciudad y del país</p>
+            <div class="card mb-3 divNosotros" style="max-width: 100vw;">
+                <div class="row g-0">
+                  <div class="col-md-4 imgCard">
+                    <img src="../IMAGENES/2019.png" class="img-fluid vw-100" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                        <h1 class="h1Nosotros card-title" id="scrollspyHeading1">Historia</h1>
+                        <p class="pNosotros card-text">Nace en el <b>2019</b>, creado por <b>Brigithe Urrutia, Leonelis León y Shirly Martínez</b>. Estos egresados Sena tenían el sueño de crear un emprendimiento distinto e innovador, que abarcara a toda la sociedad, por ello plantearon crear un restaurante de comida italiana y que a su vez integrara a esos seres maravillosos que son nuestras mascotas. En 2020 los fundadores se reunieron después de tener todo lo necesario para poder materializar su sueño, por ello crearon el nombre, el logo, escogieron el primer local, un menú, e hicieron una completa proyección de lo que sería la realización de este sueño. Por motivos de la pandemia del covid 19, el sueño tuvo que se congelado nuevamente, pero esto no era el final si no el comienzo.En el año <b>2022</b> por fin se hace realidad este sueño, más exactamente el día <b>18 de abril de 2022</b>. Desde ese día nuestras puertas se abrieron logrando posicionarnos en la ciudad. Queremos seguir mejorando cada día y posicionarnos como el mejor restaurante de la ciudad y del país</p>
+                    </div>
+                  </div>
+                </div>
             </div>
         </section>
 
         <section class="sectionNosotros2">
-            <img src="../IMAGENES/menuNosotros.jpg" alt="Pastas">
-            <div class="divNosotros">
-                <h1 class="h1Nosotros">Misión</h1>
-                <p class="pNosotros">Somos un restaurante especializado en ofrecer la mejor experiencia de comida italiana, nuestro menú está orientado a platos innovadores, con sabor inigualable y con los más altos estándares de calidad en el servicio. Contamos con profesionales en cocina y atención al cliente, con el compromiso de satisfacer las necesidades, superar las expectativas y deseos de los clientes.</p>
+            <div class="card mb-3 divNosotros" style="max-width: 100vw;">
+                <div class="row g-0 divsectionNosotros2">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="h1Nosotros" id="scrollspyHeading2">Misión</h2>
+                        <p class="pNosotros">Somos un restaurante especializado en ofrecer la mejor experiencia de comida italiana, nuestro menú está orientado a platos innovadores, con sabor inigualable y con los más altos estándares de calidad en el servicio. Contamos con profesionales en cocina y atención al cliente, con el compromiso de satisfacer las necesidades, superar las expectativas y deseos de los clientes.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 imgCard imgNosostrosResp">
+                    <img src="../IMAGENES/menuNosotros.jpg" class="img-fluid vw-100" alt="...">
+                  </div>
+                </div>
             </div>
         </section>
 
         <section class="sectionNosotros3">
-            <img src="../IMAGENES/numero1.png" alt="">
-            <div class="divNosotros">
-                <h1 class="h1Nosotros">Visión</h1>
-                <p class="pNosotros">Tenemos visionado para el año <b> 2024</b>, posicionarnos en el mercado gastronómico local como uno de los restaurantes italianos más influyentes y reconocidos de la ciudad, destacados por la calidad, innovación y el sabor de nuestros platos, como también por el servicio excepcional prestado por nuestros colaboradores y el alto grado de satisfacción de nuestros clientes.</p>
+            <div class="card mb-3 divNosotros" style="max-width: 100vw;">
+                <div class="row g-0 divsectionNosotros3">
+                  <div class="col-md-4 imgCard">
+                    <img src="../IMAGENES/numero1.png" class="img-fluid vw-100" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="h1Nosotros" id="scrollspyHeading3">Visión</h2>
+                        <p class="pNosotros">Tenemos visionado para el año <b> 2024</b>, posicionarnos en el mercado gastronómico local como uno de los restaurantes italianos más influyentes y reconocidos de la ciudad, destacados por la calidad, innovación y el sabor de nuestros platos, como también por el servicio excepcional prestado por nuestros colaboradores y el alto grado de satisfacción de nuestros clientes.</p>
+                    </div>
+                  </div>
+                </div>
             </div>
         </section>
 
