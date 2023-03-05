@@ -318,10 +318,57 @@ main {
     align-items: center;
 }
 
-.tarjetasMenu {
-    padding: 50px;
-    gap: 30px;
+.tarjetassection{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnCard {
+    background: #ECCA70;
+    
+    border-color: transparent;
+}
+
+.btnCard:hover {
+    background: #E7BB5C;
+    color: black;
+    border-color: transparent;
+}
+
+.tarjetasMenu {
+    width: 80vw;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "card1 card2 card3"
+        "card4 card5 card6";
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card6 {
+    grid-area: card6;
 }
 
 .h1Titulo {
@@ -348,16 +395,22 @@ main {
 }
 
 .divMenu {
-    width: 100%;
     background-color: #896A30;
-    padding: 20px;
-    border-radius: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    /* border-radius: 6%; */
     text-align: center;
+}
+
+.divMenu:hover {
+    transform: translate(0, -4px);
+    transition: all .3s;
 }
 
 .imgMenu {
     width: 100%;
-    border-radius: 6%;
     margin-bottom: 30px;
 }
 
@@ -675,6 +728,17 @@ hr {
         margin-top: 15px;
         max-width: 40vw;
     }
+
+    .tarjetasMenu {
+        width: 80vw;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card6";
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -721,6 +785,20 @@ hr {
         width: 3.9vw;
         height: 3.9vw;
         margin: 2px;
+    }
+
+    .tarjetasMenu {
+        width: 80vw;
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6";
     }
 }
 
