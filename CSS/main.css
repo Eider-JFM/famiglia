@@ -478,39 +478,68 @@ main {
     gap: 10px;
 }
 
-.infoFooter img {
-    width: 20px;
+.infoFooter i {
+    /* font-size: 2vw; */
+    /* width: 31px;
+    height: 31px; */
+    margin: 10px;
 }
 
 .infoFooter {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    align-items: center;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
 }
 
 .infoFooter p {
     display: inline-flex;
-    justify-content: center;
-    vertical-align: top;
-    margin-right: 15px;
-    gap: 10px;
+    padding-top: 18px;
+
+    /* vertical-align: top;
+    margin-right: 15px; */
+    
 
 }
 
-.redesFooter a img {
-    width: 3vw;
-    right: 3vw;
-    padding: 10;
+.redesFooter i {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    font-size: 2.5vw;
+    cursor: pointer;
+    width: 2.3vw;
+    height: 2.3vw;
+    border-radius: 40%;
+    margin: 10px;
+    transition: all .3s;
+    
 }
 
-.redesFooter .iconRedesMouse:hover {
-    background: #ECCA70;
+.redesFooter .iconRedesFacebook:hover {
+    background: #4267B2;
     color: white;
+    transform: translate(0, -4px);
+}
+
+.redesFooter .iconRedesWhatsapp:hover {
+    background: #25D366;
+    color: white;
+    transform: translate(0, -4px);
+}
+
+.redesFooter .iconRedesInstagram:hover {
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+        );
+    color: white;
+    transform: translate(0, -4px);
 }
 
 hr {
@@ -590,6 +619,12 @@ hr {
     .contenedorFooter h4 {
         font-size: 1.5vw;
     }
+    .redesFooter i {
+        font-size: 3.5vw;
+        width: 3.1vw;
+        height: 3.1vw;
+        margin: 4px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -628,7 +663,13 @@ hr {
 
     .infoFooter img {
         width: 2vw;
-        
         padding: 2px;
+    }
+
+    .redesFooter i {
+        font-size: 4.3vw;
+        width: 3.9vw;
+        height: 3.9vw;
+        margin: 2px;
     }
 }
