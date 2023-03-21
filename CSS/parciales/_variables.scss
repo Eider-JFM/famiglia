@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(./Raleway/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(./Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+$fuenteRaleway: Raleway, Arial, sans-serif;
+
+@font-face {
+    font-family: "yoko smile";
+    src: url(./yoko-smile/Yoko\ Smile\ Regular.otf);
+}
+
+$fuenteYokoSmile: yoko smile, Arial, sans-serif;
+
+$colorBase: black;
+
+$colorPrincipal: #896a30ff;
+
+$colorSecundario: #ECCA70;
+
+$colorTerciario: #E7BB5C;
+
+@mixin h1Titulo {
+    color: $colorTerciario;
+    font-family: $fuenteYokoSmile;
+    font-size: 8vw;
+    font-weight: bolder;
+    padding: 20px;
+    animation-duration: 3s;
+    animation-name: TextoMovimiento;
+}
+
+@mixin hrDivisioTotulo {
+    background-color: $colorSecundario;
+    border-color: $colorSecundario;
+    margin-left: 160px;
+    margin-right: 160px;
+    display: flex;
+    height: 3px;
+}
+
+@mixin justificacionTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin divNosotros {
+    background-color: rgba(0, 0, 0, 0.343);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+@mixin imgCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+@mixin h1Nosotros {
+    color: white;
+    font-family: $fuenteYokoSmile;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+@mixin pNosotros {
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+    margin: 20px;
+    padding: 20px;
+}

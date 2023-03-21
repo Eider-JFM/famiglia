@@ -1,0 +1,27 @@
+main {
+    .justificacionTitulo {
+        @include justificacionTitulo;
+
+        .h1Titulo {
+           @include h1Titulo;
+
+           @include tablet {
+                font-size: 10vw;
+           }
+        }
+        
+    }
+
+    .hrDivisioTotulo {
+        @include hrDivisioTotulo;
+    }
+
+    .sectionCarouselContainer {
+        padding-bottom: 2rem;
+
+        
+        h5 {
+            text-shadow: 2px 2px 7px $colorBase;
+        }
+    }
+}

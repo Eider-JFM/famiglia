@@ -1,0 +1,100 @@
+main {
+    .justificacionTitulo {
+        @include justificacionTitulo;
+
+        .h1Titulo {
+           @include h1Titulo;
+
+           @include tablet {
+                font-size: 10vw;
+           }
+        }
+        
+    }
+
+    .hrDivisioTotulo {
+        @include hrDivisioTotulo;
+    }
+
+    .sectionReservas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .divReservas {
+            color: $colorSecundario;
+            padding: 10px;
+            text-align: center;
+
+            .h2Reservas {
+                margin: 20px;
+                font-style: italic;
+                font-size: 30px;
+            }
+
+            p {
+                margin: 15px;
+            }
+
+            .h3Reservas {
+                margin: 30px;
+                font-style: italic;
+                font-size: 25px;
+            }
+        }
+        
+    }
+
+    .sectionReserasForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .formReservas {
+            background-color: $colorPrincipal;
+            width: 100%;
+            max-width: 350px;
+            display: block;
+            overflow: hidden;
+            padding: 15px;
+            color: $colorBase;
+            margin: 20px;
+            font-weight: bold;
+            border-radius: 3%;
+
+            label, input, textarea {
+                display: block;
+                width: 100%;
+                margin-bottom: 5px;
+                font-size: 13px;
+            }
+
+            .divBotonesReservas {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+
+                button {
+                    font-family: 'Raleway', Arial;
+                    background-color: $colorSecundario;
+                    border: none;
+                    width: 60px;
+                    border-radius: 4px;
+                }
+
+                button:hover {
+                    background-color: $colorTerciario;
+                    cursor: pointer; cursor: hand;
+                }
+            }
+
+            input, textarea {
+                font-family: 'Raleway', Arial;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $colorSecundario;
+                outline: none;
+            }
+        }
+    }
+}

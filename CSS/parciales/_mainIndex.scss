@@ -1,0 +1,120 @@
+main {
+    background-color: $colorBase;
+    padding-top: 4%;
+
+    .sectionIndex1 {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+        .imagenIndex {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+    
+            img{
+                width: 45vw;
+                margin-right: 5px;
+            }
+
+            .textoBienvenida {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-shadow: 6px 6px 20px black;
+
+                h1 {
+                    color: $colorSecundario;
+                    font-size: 15vw;
+                    animation-duration: 3s;
+                    animation-name: TextoMovimiento;
+
+                    @include tablet {
+                        color: $colorSecundario;
+                        font-size: 12vw;
+                    }
+
+                    @include mobile {
+                        color: $colorSecundario;
+                        font-size: 10vw;
+                    }
+                }
+
+                h2 {
+                    font-family: $fuenteYokoSmile;
+                    color: $colorTerciario;
+                    font-size: 7.5vw;
+                    font-style: italic;
+                }
+
+                img {
+                    margin-top: 20px;
+                    width: 100%;
+                    max-width: 15vw;
+
+                    @include tablet {
+                        margin-bottom: 30px;
+                    }
+
+                    @include mobile {
+                        margin-bottom: 10px;
+                    }
+                }
+            
+            }
+        }
+        
+    }
+
+    .sectionIndex2{
+        display: flex;
+        padding: 10px;
+
+        .certificacionPetIndex {
+            background-color: $colorPrincipal;
+            display: flex; 
+            justify-content: center;
+
+            @include tablet {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            img {
+                width: 100%;
+                max-width: 25vw;
+                padding: 1.4vw;
+
+                @include tablet {
+                    margin-top: 20px;
+                    padding: none;
+                }
+            }
+
+            p {
+                font-size: 1.4vw;
+                font-style: italic;
+                margin: auto;
+                padding: 40px;
+                align-items: center;
+                text-align: justify;
+                color: $colorBase;
+
+                @include tablet {
+                    font-size: 2.5vw;
+                    margin: 20px;
+                    padding: 20px;
+                }
+
+                @include mobile {
+                    font-size: 2.4vw;
+                    margin: 10px;
+                    padding: 10px;
+                }
+            }
+        }
+    
+    }
+
+}

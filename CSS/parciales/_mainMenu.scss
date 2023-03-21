@@ -1,0 +1,134 @@
+.mainNormal {
+    padding-top: 2px;
+
+    .justificacionTitulo {
+        @include justificacionTitulo;
+
+        .h1Titulo {
+            @include h1Titulo;
+
+            @include tablet {
+                
+            }
+        }
+    }
+
+    .hrDivisioTotulo {
+        @include hrDivisioTotulo;
+    }
+
+    .tarjetassection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .tarjetasMenu {
+            width: 80vw;
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                "card1 card2 card3"
+                "card4 card5 card6";
+            
+            @include tablet {
+                width: 80vw;
+                display: grid;
+                grid-template-columns:repeat(2, 1fr);
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas: 
+                    "card1 card2"
+                    "card3 card4"
+                    "card5 card6";
+            }
+            
+            @include mobile {
+                width: 80vw;
+                display: grid;
+                grid-template-columns:repeat(1, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-areas: 
+                    "card1"
+                    "card2"
+                    "card3"
+                    "card4"
+                    "card5"
+                    "card6";        
+            }
+            
+
+            .divMenu {
+            background-color: $colorPrincipal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            text-align: center;
+                
+                .imgMenu {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+
+                .card-body {
+                    @include card-body;
+
+                    h2 {
+                        font-style: italic;
+                        margin-bottom: 30px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                    }
+
+                    .btnCard {
+                        background: $colorSecundario;                        
+                        border-color: transparent;
+                    }
+
+                    .btnCard:hover {
+                        background: $colorTerciario;
+                        color: $colorBase;
+                        border-color: transparent;
+                    }
+                }
+            }
+
+            .divMenu:hover {
+                transform: translate(0, -4px);
+                transition: all .3s;
+            }
+
+            .card1 {
+                grid-area: card1;
+            }
+
+            .card2 {
+                grid-area: card2;
+            }
+            
+            .card3 {
+                grid-area: card3;
+            }
+            
+            .card4 {
+                grid-area: card4;
+            
+            }
+            
+            .card5 {
+                grid-area: card5;
+            }
+            
+            .card6 {
+                grid-area: card6;
+            }
+        }
+
+       
+    }
+
+
+}

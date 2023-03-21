@@ -1,0 +1,140 @@
+main {
+    .justificacionTitulo {
+        @include justificacionTitulo;
+
+        .h1Titulo {
+           @include h1Titulo;
+
+           @include tablet {
+                font-size: 10vw;
+           }
+        }
+        
+    }
+
+    .hrDivisioTotulo {
+        @include hrDivisioTotulo;
+    }
+
+    .sectionNosotros1 {
+        background-image: url(../IMAGENES/historia\ nosotros.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        .divNosotros {
+            @include divNosotros;
+
+            .imgCard {
+                @include imgCard;
+            }
+
+            .card-body {
+                @include card-body;
+
+                .h1Nosotros {
+                    @include h1Nosotros;
+                }
+                
+                .pNosotros {
+                    @include pNosotros;
+                }
+            }
+        }
+    }
+
+    .sectionNosotros2 {
+        background-image: url(../IMAGENES/mision\ nosotros.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        padding: 20px;
+        margin-top: 10px;
+
+        .divNosotros {
+            @include divNosotros;
+
+            .divsectionNosotros2 {
+                @include tablet {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+
+            }
+
+            .imgCard {
+                @include imgCard;
+
+                img {
+                    @include tablet {
+                        margin-top: 15px;
+                        max-width: 60vw;
+                    }
+                }
+            }
+
+            .card-body {
+                @include card-body;
+
+                .h1Nosotros {
+                    @include h1Nosotros;
+                }
+                
+                .pNosotros {
+                    @include pNosotros;
+                }
+            }
+        }
+    }
+
+    
+    .sectionNosotros3 {
+        background-image: url(../IMAGENES/visionNosotros.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        margin-top: 10px;
+
+        .divNosotros {
+            @include divNosotros;
+
+            .imgCard {
+                @include imgCard;
+
+                img {
+                    float: right;
+                    width: 20%;
+                    right: 20%;
+                    padding: 20px;
+                    border-image: 10%;
+
+                    @include tablet {
+                        margin-top: 15px;
+                        max-width: 40vw;
+                    }
+                }
+            }
+
+            .card-body {
+                @include card-body;
+
+                .h1Nosotros {
+                    @include h1Nosotros;
+                }
+                
+                .pNosotros {
+                    @include pNosotros;
+                }
+            }
+        }
+    }
+
+}

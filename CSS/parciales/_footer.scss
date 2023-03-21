@@ -1,0 +1,144 @@
+.contenedorFooter {
+    width: 100%;
+    padding: 30px 0;
+    background-color: $colorTerciario;
+
+    footer{
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+
+        .logoFooter {
+            text-align: center;
+
+            img {
+                width: 8vw;
+                opacity: 0.65;
+
+                @include tablet {
+                    width: 12vw;
+                }
+            }
+        }
+
+        .redesFooter {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+
+            i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2.5vw;
+                cursor: pointer;
+                width: 2.3vw;
+                height: 2.3vw;
+                border-radius: 40%;
+                margin: 10px;
+                transition: all .3s;
+
+                @include tablet {
+                    font-size: 3.5vw;
+                    width: 3.1vw;
+                    height: 3.1vw;
+                    margin: 4px;
+                }
+
+                @include mobile {
+                    font-size: 4.3vw;
+                    width: 3.9vw;
+                    height: 3.9vw;
+                    margin: 2px;
+                }
+                
+            }
+
+            .iconRedesFacebook:hover {
+                background: #4267B2;
+                color: white;
+                transform: translate(0, -4px);
+            }
+
+            .iconRedesWhatsapp:hover {
+                background: #25D366;
+                color: white;
+                transform: translate(0, -4px);
+            }
+
+            .iconRedesInstagram:hover {
+                background: radial-gradient(
+                    circle at 33% 100%,
+                    #fed373 4%,
+                    #f15245 30%,
+                    #d92e7f 62%,
+                    #9b36b7 85%,
+                    #515ecf
+                    );
+                color: white;
+                transform: translate(0, -4px);
+            }
+        }
+
+        .infoFooter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            i {
+                margin: 10px;
+            }
+
+            p {
+                display: inline-flex;
+                padding-top: 18px;
+
+                @include tablet {
+                    font-size: 2.5vw;
+                }
+
+                @include mobile {
+                    font-size: 3vw;
+                }
+            }
+        }
+
+        hr {
+            border-color: $colorBase;
+
+            @include tablet {
+                margin-left: 10vw;
+                margin-right: 10vw;
+        
+            }
+        }
+        
+        h4 {
+            font-size: small;
+            font-weight: normal;
+            margin-top: 10px;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include tablet {
+                font-size: 1.5vw;
+            }
+        }
+    }
+}
+
+
+@keyframes TextoMovimiento {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

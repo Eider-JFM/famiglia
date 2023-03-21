@@ -1,0 +1,82 @@
+
+header {
+    padding: 2rem;
+
+    @include tablet {
+        padding: 2.5rem;
+    }
+
+    @include mobile {
+        padding: 3rem;
+    }
+
+    a {
+        outline: none;
+        text-decoration: none;
+    }
+    
+    a:link{
+        color: white;
+    
+    }
+    
+    a:visited{
+        color: white;
+    }
+    
+    a:focus{
+        background-color: $colorPrincipal;
+    }
+    
+    a:hover{
+        background-color: $colorPrincipal;
+    }
+    
+    a:active{
+        background-color: $colorBase;
+    }
+    
+    
+    img {
+        max-width: 100%;
+    }
+
+    nav {
+        background-color: rgba(0, 0, 0, 0.757);
+        font-size: 1.3rem;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+
+        @include mobile {
+            font-size: 0.8rem;
+        }
+
+        .navSinHover:hover {
+            background: none;
+        }
+    }
+
+    .dropdown-menu {
+        background: $colorBase;
+        opacity: 0.75;
+
+        .dropdown-item.active {
+            background: $colorSecundario !important;
+            color: $colorBase;
+        }
+
+        .dropdown-divider{
+            background: $colorPrincipal;
+            height: 2px;
+        }
+        
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,761 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(./Raleway/Raleway-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(./Raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "yoko smile";
+  src: url(./yoko-smile/Yoko\ Smile\ Regular.otf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  color: none;
+}
+
+body {
+  background-color: black;
+  font-family: Raleway, Arial, sans-serif;
+}
+
+header {
+  padding: 2rem;
+}
+@media screen and (max-width: 768px) {
+  header {
+    padding: 2.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    padding: 3rem;
+  }
+}
+header a {
+  outline: none;
+  text-decoration: none;
+}
+header a:link {
+  color: white;
+}
+header a:visited {
+  color: white;
+}
+header a:focus {
+  background-color: #896a30;
+}
+header a:hover {
+  background-color: #896a30;
+}
+header a:active {
+  background-color: black;
+}
+header img {
+  max-width: 100%;
+}
+header nav {
+  background-color: rgba(0, 0, 0, 0.757);
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  header nav {
+    font-size: 0.8rem;
+  }
+}
+header nav .navSinHover:hover {
+  background: none;
+}
+header .dropdown-menu {
+  background: black;
+  opacity: 0.75;
+}
+header .dropdown-menu .dropdown-item.active {
+  background: #ECCA70 !important;
+  color: black;
+}
+header .dropdown-menu .dropdown-divider {
+  background: #896a30;
+  height: 2px;
+}
+
+main {
+  background-color: black;
+  padding-top: 4%;
+}
+main .sectionIndex1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+main .sectionIndex1 .imagenIndex {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+main .sectionIndex1 .imagenIndex img {
+  width: 45vw;
+  margin-right: 5px;
+}
+main .sectionIndex1 .imagenIndex .textoBienvenida {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 6px 6px 20px black;
+}
+main .sectionIndex1 .imagenIndex .textoBienvenida h1 {
+  color: #ECCA70;
+  font-size: 15vw;
+  animation-duration: 3s;
+  animation-name: TextoMovimiento;
+}
+@media screen and (max-width: 768px) {
+  main .sectionIndex1 .imagenIndex .textoBienvenida h1 {
+    color: #ECCA70;
+    font-size: 12vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .sectionIndex1 .imagenIndex .textoBienvenida h1 {
+    color: #ECCA70;
+    font-size: 10vw;
+  }
+}
+main .sectionIndex1 .imagenIndex .textoBienvenida h2 {
+  font-family: yoko smile, Arial, sans-serif;
+  color: #E7BB5C;
+  font-size: 7.5vw;
+  font-style: italic;
+}
+main .sectionIndex1 .imagenIndex .textoBienvenida img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 15vw;
+}
+@media screen and (max-width: 768px) {
+  main .sectionIndex1 .imagenIndex .textoBienvenida img {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .sectionIndex1 .imagenIndex .textoBienvenida img {
+    margin-bottom: 10px;
+  }
+}
+main .sectionIndex2 {
+  display: flex;
+  padding: 10px;
+}
+main .sectionIndex2 .certificacionPetIndex {
+  background-color: #896a30;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  main .sectionIndex2 .certificacionPetIndex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+main .sectionIndex2 .certificacionPetIndex img {
+  width: 100%;
+  max-width: 25vw;
+  padding: 1.4vw;
+}
+@media screen and (max-width: 768px) {
+  main .sectionIndex2 .certificacionPetIndex img {
+    margin-top: 20px;
+    padding: none;
+  }
+}
+main .sectionIndex2 .certificacionPetIndex p {
+  font-size: 1.4vw;
+  font-style: italic;
+  margin: auto;
+  padding: 40px;
+  align-items: center;
+  text-align: justify;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  main .sectionIndex2 .certificacionPetIndex p {
+    font-size: 2.5vw;
+    margin: 20px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .sectionIndex2 .certificacionPetIndex p {
+    font-size: 2.4vw;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+main .justificacionTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .justificacionTitulo .h1Titulo {
+  color: #E7BB5C;
+  font-family: yoko smile, Arial, sans-serif;
+  font-size: 8vw;
+  font-weight: bolder;
+  padding: 20px;
+  animation-duration: 3s;
+  animation-name: TextoMovimiento;
+}
+@media screen and (max-width: 768px) {
+  main .justificacionTitulo .h1Titulo {
+    font-size: 10vw;
+  }
+}
+main .hrDivisioTotulo {
+  background-color: #ECCA70;
+  border-color: #ECCA70;
+  margin-left: 160px;
+  margin-right: 160px;
+  display: flex;
+  height: 3px;
+}
+main .sectionNosotros1 {
+  background-image: url(../IMAGENES/historia\ nosotros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+main .sectionNosotros1 .divNosotros {
+  background-color: rgba(0, 0, 0, 0.343);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+main .sectionNosotros1 .divNosotros .imgCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sectionNosotros1 .divNosotros .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+main .sectionNosotros1 .divNosotros .card-body .h1Nosotros {
+  color: white;
+  font-family: yoko smile, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 20px;
+}
+main .sectionNosotros1 .divNosotros .card-body .pNosotros {
+  color: white;
+  text-align: justify;
+  font-size: 18px;
+  margin: 20px;
+  padding: 20px;
+}
+main .sectionNosotros2 {
+  background-image: url(../IMAGENES/mision\ nosotros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding: 20px;
+  margin-top: 10px;
+}
+main .sectionNosotros2 .divNosotros {
+  background-color: rgba(0, 0, 0, 0.343);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  main .sectionNosotros2 .divNosotros .divsectionNosotros2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+main .sectionNosotros2 .divNosotros .imgCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  main .sectionNosotros2 .divNosotros .imgCard img {
+    margin-top: 15px;
+    max-width: 60vw;
+  }
+}
+main .sectionNosotros2 .divNosotros .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+main .sectionNosotros2 .divNosotros .card-body .h1Nosotros {
+  color: white;
+  font-family: yoko smile, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 20px;
+}
+main .sectionNosotros2 .divNosotros .card-body .pNosotros {
+  color: white;
+  text-align: justify;
+  font-size: 18px;
+  margin: 20px;
+  padding: 20px;
+}
+main .sectionNosotros3 {
+  background-image: url(../IMAGENES/visionNosotros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+main .sectionNosotros3 .divNosotros {
+  background-color: rgba(0, 0, 0, 0.343);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+main .sectionNosotros3 .divNosotros .imgCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sectionNosotros3 .divNosotros .imgCard img {
+  float: right;
+  width: 20%;
+  right: 20%;
+  padding: 20px;
+  -o-border-image: 10%;
+     border-image: 10%;
+}
+@media screen and (max-width: 768px) {
+  main .sectionNosotros3 .divNosotros .imgCard img {
+    margin-top: 15px;
+    max-width: 40vw;
+  }
+}
+main .sectionNosotros3 .divNosotros .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+main .sectionNosotros3 .divNosotros .card-body .h1Nosotros {
+  color: white;
+  font-family: yoko smile, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 20px;
+}
+main .sectionNosotros3 .divNosotros .card-body .pNosotros {
+  color: white;
+  text-align: justify;
+  font-size: 18px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.mainNormal {
+  padding-top: 2px;
+}
+.mainNormal .justificacionTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainNormal .justificacionTitulo .h1Titulo {
+  color: #E7BB5C;
+  font-family: yoko smile, Arial, sans-serif;
+  font-size: 8vw;
+  font-weight: bolder;
+  padding: 20px;
+  animation-duration: 3s;
+  animation-name: TextoMovimiento;
+}
+.mainNormal .hrDivisioTotulo {
+  background-color: #ECCA70;
+  border-color: #ECCA70;
+  margin-left: 160px;
+  margin-right: 160px;
+  display: flex;
+  height: 3px;
+}
+.mainNormal .tarjetassection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainNormal .tarjetassection .tarjetasMenu {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+}
+@media screen and (max-width: 768px) {
+  .mainNormal .tarjetassection .tarjetasMenu {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "card1 card2" "card3 card4" "card5 card6";
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainNormal .tarjetassection .tarjetasMenu {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6";
+  }
+}
+.mainNormal .tarjetassection .tarjetasMenu .divMenu {
+  background-color: #896a30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+}
+.mainNormal .tarjetassection .tarjetasMenu .divMenu .imgMenu {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.mainNormal .tarjetassection .tarjetasMenu .divMenu .card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+.mainNormal .tarjetassection .tarjetasMenu .divMenu .card-body h2 {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+.mainNormal .tarjetassection .tarjetasMenu .divMenu .card-body p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.mainNormal .tarjetassection .tarjetasMenu .divMenu .card-body .btnCard {
+  background: #ECCA70;
+  border-color: transparent;
+}
+.mainNormal .tarjetassection .tarjetasMenu .divMenu .card-body .btnCard:hover {
+  background: #E7BB5C;
+  color: black;
+  border-color: transparent;
+}
+.mainNormal .tarjetassection .tarjetasMenu .divMenu:hover {
+  transform: translate(0, -4px);
+  transition: all 0.3s;
+}
+.mainNormal .tarjetassection .tarjetasMenu .card1 {
+  grid-area: card1;
+}
+.mainNormal .tarjetassection .tarjetasMenu .card2 {
+  grid-area: card2;
+}
+.mainNormal .tarjetassection .tarjetasMenu .card3 {
+  grid-area: card3;
+}
+.mainNormal .tarjetassection .tarjetasMenu .card4 {
+  grid-area: card4;
+}
+.mainNormal .tarjetassection .tarjetasMenu .card5 {
+  grid-area: card5;
+}
+.mainNormal .tarjetassection .tarjetasMenu .card6 {
+  grid-area: card6;
+}
+
+main .justificacionTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .justificacionTitulo .h1Titulo {
+  color: #E7BB5C;
+  font-family: yoko smile, Arial, sans-serif;
+  font-size: 8vw;
+  font-weight: bolder;
+  padding: 20px;
+  animation-duration: 3s;
+  animation-name: TextoMovimiento;
+}
+@media screen and (max-width: 768px) {
+  main .justificacionTitulo .h1Titulo {
+    font-size: 10vw;
+  }
+}
+main .hrDivisioTotulo {
+  background-color: #ECCA70;
+  border-color: #ECCA70;
+  margin-left: 160px;
+  margin-right: 160px;
+  display: flex;
+  height: 3px;
+}
+main .sectionCarouselContainer {
+  padding-bottom: 2rem;
+}
+main .sectionCarouselContainer h5 {
+  text-shadow: 2px 2px 7px black;
+}
+
+main .justificacionTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .justificacionTitulo .h1Titulo {
+  color: #E7BB5C;
+  font-family: yoko smile, Arial, sans-serif;
+  font-size: 8vw;
+  font-weight: bolder;
+  padding: 20px;
+  animation-duration: 3s;
+  animation-name: TextoMovimiento;
+}
+@media screen and (max-width: 768px) {
+  main .justificacionTitulo .h1Titulo {
+    font-size: 10vw;
+  }
+}
+main .hrDivisioTotulo {
+  background-color: #ECCA70;
+  border-color: #ECCA70;
+  margin-left: 160px;
+  margin-right: 160px;
+  display: flex;
+  height: 3px;
+}
+main .sectionReservas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sectionReservas .divReservas {
+  color: #ECCA70;
+  padding: 10px;
+  text-align: center;
+}
+main .sectionReservas .divReservas .h2Reservas {
+  margin: 20px;
+  font-style: italic;
+  font-size: 30px;
+}
+main .sectionReservas .divReservas p {
+  margin: 15px;
+}
+main .sectionReservas .divReservas .h3Reservas {
+  margin: 30px;
+  font-style: italic;
+  font-size: 25px;
+}
+main .sectionReserasForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sectionReserasForm .formReservas {
+  background-color: #896a30;
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  color: black;
+  margin: 20px;
+  font-weight: bold;
+  border-radius: 3%;
+}
+main .sectionReserasForm .formReservas label, main .sectionReserasForm .formReservas input, main .sectionReserasForm .formReservas textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+main .sectionReserasForm .formReservas .divBotonesReservas {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+main .sectionReserasForm .formReservas .divBotonesReservas button {
+  font-family: "Raleway", Arial;
+  background-color: #ECCA70;
+  border: none;
+  width: 60px;
+  border-radius: 4px;
+}
+main .sectionReserasForm .formReservas .divBotonesReservas button:hover {
+  background-color: #E7BB5C;
+  cursor: pointer;
+  cursor: hand;
+}
+main .sectionReserasForm .formReservas input, main .sectionReserasForm .formReservas textarea {
+  font-family: "Raleway", Arial;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ECCA70;
+  outline: none;
+}
+
+.contenedorFooter {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #E7BB5C;
+}
+.contenedorFooter footer {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+.contenedorFooter footer .logoFooter {
+  text-align: center;
+}
+.contenedorFooter footer .logoFooter img {
+  width: 8vw;
+  opacity: 0.65;
+}
+@media screen and (max-width: 768px) {
+  .contenedorFooter footer .logoFooter img {
+    width: 12vw;
+  }
+}
+.contenedorFooter footer .redesFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.contenedorFooter footer .redesFooter i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+  cursor: pointer;
+  width: 2.3vw;
+  height: 2.3vw;
+  border-radius: 40%;
+  margin: 10px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .contenedorFooter footer .redesFooter i {
+    font-size: 3.5vw;
+    width: 3.1vw;
+    height: 3.1vw;
+    margin: 4px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedorFooter footer .redesFooter i {
+    font-size: 4.3vw;
+    width: 3.9vw;
+    height: 3.9vw;
+    margin: 2px;
+  }
+}
+.contenedorFooter footer .redesFooter .iconRedesFacebook:hover {
+  background: #4267B2;
+  color: white;
+  transform: translate(0, -4px);
+}
+.contenedorFooter footer .redesFooter .iconRedesWhatsapp:hover {
+  background: #25D366;
+  color: white;
+  transform: translate(0, -4px);
+}
+.contenedorFooter footer .redesFooter .iconRedesInstagram:hover {
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  color: white;
+  transform: translate(0, -4px);
+}
+.contenedorFooter footer .infoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorFooter footer .infoFooter i {
+  margin: 10px;
+}
+.contenedorFooter footer .infoFooter p {
+  display: inline-flex;
+  padding-top: 18px;
+}
+@media screen and (max-width: 768px) {
+  .contenedorFooter footer .infoFooter p {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedorFooter footer .infoFooter p {
+    font-size: 3vw;
+  }
+}
+.contenedorFooter footer hr {
+  border-color: black;
+}
+@media screen and (max-width: 768px) {
+  .contenedorFooter footer hr {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+.contenedorFooter footer h4 {
+  font-size: small;
+  font-weight: normal;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .contenedorFooter footer h4 {
+    font-size: 1.5vw;
+  }
+}
+
+@keyframes TextoMovimiento {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}/*# sourceMappingURL=estilos.css.map */
