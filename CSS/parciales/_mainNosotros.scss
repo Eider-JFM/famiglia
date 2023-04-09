@@ -17,7 +17,7 @@ main {
     }
 
     .sectionNosotros1 {
-        background-image: url(../IMAGENES/historia\ nosotros.jpg);
+        background-image: url(../IMAGENES/historia_nosotros.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -48,7 +48,7 @@ main {
     }
 
     .sectionNosotros2 {
-        background-image: url(../IMAGENES/mision\ nosotros.jpg);
+        background-image: url(../IMAGENES/mision_nosotros.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -94,7 +94,7 @@ main {
 
     
     .sectionNosotros3 {
-        background-image: url(../IMAGENES/visionNosotros.jpg);
+        background-image: url(../IMAGENES/visionNosotros.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -111,8 +111,7 @@ main {
 
                 img {
                     float: right;
-                    width: 20%;
-                    right: 20%;
+                    max-width: 20vw;
                     padding: 20px;
                     border-image: 10%;
 
