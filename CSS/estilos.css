@@ -653,6 +653,10 @@ main .sectionReserasForm .formReservas input, main .sectionReserasForm .formRese
   width: 8vw;
   opacity: 0.65;
 }
+.redesFooter .btn-sinMargen {
+  text-decoration: none;
+  color: black;
+}
 @media screen and (max-width: 768px) {
   .contenedorFooter footer .logoFooter img {
     width: 12vw;
