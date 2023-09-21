@@ -601,6 +601,10 @@ main .sectionReserasForm .formReservas {
   font-weight: bold;
   border-radius: 3%;
 }
+
+main .sectionReserasForm .formReservas .fondoLabel {
+  color: #896A30;
+}
 main .sectionReserasForm .formReservas label, main .sectionReserasForm .formReservas input, main .sectionReserasForm .formReservas textarea {
   display: block;
   width: 100%;
