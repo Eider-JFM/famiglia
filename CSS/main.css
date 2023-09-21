@@ -602,6 +602,11 @@ h5 {
     transform: translate(0, -4px);
 }
 
+.redesFooter .btn-sinMargen {
+    text-decoration: none;
+    color: black;
+  }
+
 .redesFooter .iconRedesWhatsapp:hover {
     background: #25D366;
     color: white;
